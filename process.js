@@ -14,7 +14,7 @@ var payment_form = $('.payment_modal'),
 var paymentMethodsWrap = $('.payment-methods__wrap');
 
 
-/*function UpdateStatus() {
+function UpdateStatus() {
     var is_open = false;
     var timer = null;
 
@@ -43,7 +43,7 @@ var paymentMethodsWrap = $('.payment-methods__wrap');
             }
         }
     }
-}*/
+}
 
 // TODO: make captcha more usable
 
@@ -462,7 +462,7 @@ $(function () {
         $('.requests_output-js').removeClass('open_list');
     });
 
-    /*if ($('.requests_output-js').length > 0) {
+    if ($('.requests_output-js').length > 0) {
         update_status = new UpdateStatus();
 
         $(".requests_output-js").click(function () {
@@ -478,7 +478,7 @@ $(function () {
                 reloadRequestList();
             }
         });
-    }*/
+    }
     if ($(".requests_output-js").length > 0) {
         $(".requests_output-js").click(function () {
             $(this).next(".requests_output_block").slideToggle();
