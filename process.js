@@ -119,7 +119,7 @@ $(function () {
    * @param string regex пример: data-mask-pattern="\+7 \(926\) \d{3}-mytext-\d{2}-\d{2}-\w{2}-\.{2}"
    * @returns {string}
    */
-  function convertToMaskInput(regex) {
+ /* function convertToMaskInput(regex) {
     return new RegExp(regex).source
       .replace(/^\^|\$$/g, '') // чистка служебных начала и конца
       .replace(/\\d/g, '#') // замена цифрофого шаблона на маску цифры
@@ -138,7 +138,7 @@ $(function () {
       .replace(/([\w*#_.-])\{(\d+)\}/gi, function (_, c, n) {
         return Array(+n + 1).join(c)
       })
-  }
+  }*/
 
   function mergeValueMask(value, mask)
   {
